@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Module", "HowToShowWindowViaAction.Module\HowToShowWindowViaAction.Module.csproj", "{93F3B841-0551-4DF5-A43F-CE6D3887D521}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Module.Web", "HowToShowWindowViaAction.Module.Web\HowToShowWindowViaAction.Module.Web.csproj", "{4A54C394-7C40-40B7-B157-D613C63DDC09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Web", "HowToShowWindowViaAction.Web\HowToShowWindowViaAction.Web.csproj", "{03D3BA6E-60F1-4A56-90E3-716A290205D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Module.Win", "HowToShowWindowViaAction.Module.Win\HowToShowWindowViaAction.Module.Win.csproj", "{9996369D-73AB-49E9-BDB4-1B3FC09BD618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Win", "HowToShowWindowViaAction.Win\HowToShowWindowViaAction.Win.csproj", "{645AC9FF-3387-48A6-9BF8-B6BE71D017FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93F3B841-0551-4DF5-A43F-CE6D3887D521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F3B841-0551-4DF5-A43F-CE6D3887D521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F3B841-0551-4DF5-A43F-CE6D3887D521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F3B841-0551-4DF5-A43F-CE6D3887D521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A54C394-7C40-40B7-B157-D613C63DDC09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A54C394-7C40-40B7-B157-D613C63DDC09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A54C394-7C40-40B7-B157-D613C63DDC09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A54C394-7C40-40B7-B157-D613C63DDC09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03D3BA6E-60F1-4A56-90E3-716A290205D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D3BA6E-60F1-4A56-90E3-716A290205D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D3BA6E-60F1-4A56-90E3-716A290205D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D3BA6E-60F1-4A56-90E3-716A290205D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9996369D-73AB-49E9-BDB4-1B3FC09BD618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9996369D-73AB-49E9-BDB4-1B3FC09BD618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9996369D-73AB-49E9-BDB4-1B3FC09BD618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9996369D-73AB-49E9-BDB4-1B3FC09BD618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645AC9FF-3387-48A6-9BF8-B6BE71D017FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645AC9FF-3387-48A6-9BF8-B6BE71D017FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645AC9FF-3387-48A6-9BF8-B6BE71D017FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645AC9FF-3387-48A6-9BF8-B6BE71D017FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
