@@ -18,7 +18,7 @@ namespace HowToShowWindowViaAction.Module {
 		}
 
 		private void popupWindowShowAction1_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
-			IObjectSpace objectSpace = Application.CreateObjectSpace();
+			IObjectSpace objectSpace = Application.CreateObjectSpace(typeof(BusinessClass2));
 			CollectionSourceBase collectionSource = new CollectionSource(objectSpace, typeof(BusinessClass2));
 			e.View = Application.CreateListView(
 				 Application.FindListViewId(typeof(BusinessClass2)),
@@ -27,7 +27,7 @@ namespace HowToShowWindowViaAction.Module {
 		}
 
 		private void simpleAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-			IObjectSpace objectSpace = Application.CreateObjectSpace();
+			IObjectSpace objectSpace = Application.CreateObjectSpace(typeof(BusinessClass2));
 			string listViewId = Application.FindListViewId(typeof(BusinessClass2));
 			e.ShowViewParameters.CreatedView = Application.CreateListView(
 				listViewId,
@@ -38,7 +38,7 @@ namespace HowToShowWindowViaAction.Module {
 		}
 
 		private void simpleAction2_Execute(object sender, SimpleActionExecuteEventArgs e) {
-			IObjectSpace objectSpace = Application.CreateObjectSpace();
+			IObjectSpace objectSpace = Application.CreateObjectSpace(typeof(BusinessClass2));
 			BusinessClass2 obj = objectSpace.CreateObject<BusinessClass2>();
 			obj.Name = "an existing domain object";
 			objectSpace.CommitChanges();
@@ -53,7 +53,7 @@ namespace HowToShowWindowViaAction.Module {
 		}
 
 		private void popupWindowShowAction2_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
-			IObjectSpace objectSpace = Application.CreateObjectSpace();
+			IObjectSpace objectSpace = Application.CreateObjectSpace(typeof(BusinessClass2));
 			BusinessClass2 obj = objectSpace.CreateObject<BusinessClass2>();
 			obj.Name = "an existing domain object";
 			objectSpace.CommitChanges();
