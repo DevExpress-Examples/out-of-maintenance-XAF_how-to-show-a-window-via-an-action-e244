@@ -20,13 +20,13 @@ Namespace HowToShowWindowViaAction.Module
 		End Sub
 
 		Private Sub popupWindowShowAction1_CustomizePopupWindowParams(ByVal sender As Object, ByVal e As CustomizePopupWindowParamsEventArgs) Handles popupWindowShowAction1.CustomizePopupWindowParams
-			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace()
+			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace(GetType(BusinessClass2))
 			Dim collectionSource As CollectionSourceBase = New CollectionSource(objectSpace, GetType(BusinessClass2))
 			e.View = Application.CreateListView(Application.FindListViewId(GetType(BusinessClass2)), collectionSource, True)
 		End Sub
 
 		Private Sub simpleAction1_Execute(ByVal sender As Object, ByVal e As SimpleActionExecuteEventArgs) Handles simpleAction1.Execute
-			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace()
+			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace(GetType(BusinessClass2))
 			Dim listViewId As String = Application.FindListViewId(GetType(BusinessClass2))
 			e.ShowViewParameters.CreatedView = Application.CreateListView(listViewId, Application.CreateCollectionSource(objectSpace, GetType(BusinessClass2), listViewId), True)
 			e.ShowViewParameters.TargetWindow = TargetWindow.NewWindow
@@ -34,7 +34,7 @@ Namespace HowToShowWindowViaAction.Module
 		End Sub
 
 		Private Sub simpleAction2_Execute(ByVal sender As Object, ByVal e As SimpleActionExecuteEventArgs) Handles simpleAction2.Execute
-			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace()
+			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace(GetType(BusinessClass2))
 			Dim obj As BusinessClass2 = objectSpace.CreateObject(Of BusinessClass2)()
 			obj.Name = "an existing domain object"
 			objectSpace.CommitChanges()
@@ -49,7 +49,7 @@ Namespace HowToShowWindowViaAction.Module
 		End Sub
 
 		Private Sub popupWindowShowAction2_CustomizePopupWindowParams(ByVal sender As Object, ByVal e As CustomizePopupWindowParamsEventArgs) Handles popupWindowShowAction2.CustomizePopupWindowParams
-			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace()
+			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace(GetType(BusinessClass2))
 			Dim obj As BusinessClass2 = objectSpace.CreateObject(Of BusinessClass2)()
 			obj.Name = "an existing domain object"
 			objectSpace.CommitChanges()
