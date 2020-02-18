@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -8,11 +9,14 @@
     <ProjectGuid>{03D3BA6E-60F1-4A56-90E3-716A290205D9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>HowToShowWindowViaAction.Web</AssemblyName>
-    <FileUpgradeFlags></FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
-    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -28,6 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>42353,42354,42355</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,75 +41,84 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <NoWarn>42353,42354,42355</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v12.2.Core">
+    <Reference Include="DevExpress.Pdf.v19.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Printing.v12.2.Core.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Data.v12.2">
+    <Reference Include="DevExpress.RichEdit.v19.2.Export">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Data.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Images.v12.2">
+    <Reference Include="DevExpress.Printing.v19.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Images.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v12.2">
+    <Reference Include="DevExpress.Data.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Objects.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Images.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Security.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Objects.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Security.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Validation.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Web.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Web.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v12.2">
+    <Reference Include="DevExpress.ExpressApp.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Persistent.Base.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Persistent.BaseImpl.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxEditors.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Web.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Web.ASPxEditors.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxGridView.v12.2">
+    <Reference Include="DevExpress.Persistent.Base.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Web.ASPxGridView.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxThemes.v12.2">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Web.ASPxThemes.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Web.v12.2">
+    <Reference Include="DevExpress.Web.ASPxThemes.v19.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Web.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2.Web">
+    <Reference Include="DevExpress.Office.v19.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Xpo.v12.2.Web.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2">
+    <Reference Include="DevExpress.RichEdit.v19.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker32\TestFolder\Dlls\12.2.2\DevExpress.Xpo.v12.2.dll</HintPath>
+      
+    </Reference>
+    <Reference Include="DevExpress.Web.v19.2">
+      <Private>True</Private>
+      
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.2">
+      <Private>True</Private>
+      
     </Reference>
     <Reference Include="System">
       <Private>False</Private>
@@ -236,8 +250,13 @@
     <Content Include="Bin\HowToShowWindowViaAction.Module.Web.dll" />
     <Content Include="Bin\HowToShowWindowViaAction.Module.Web.pdb" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -253,10 +272,12 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2064</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

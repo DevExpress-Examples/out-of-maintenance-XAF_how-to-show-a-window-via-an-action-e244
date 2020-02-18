@@ -1,6 +1,6 @@
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v12.1" %>
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v12.1" Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dxwpg" %>
-<%@ Register Assembly="DevExpress.PivotGrid.v12.1.Core" Namespace="DevExpress.XtraPivotGrid" TagPrefix="temp" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2" %>
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v19.2" Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dxwpg" %>
+<%@ Register Assembly="DevExpress.PivotGrid.v19.2.Core" Namespace="DevExpress.XtraPivotGrid" TagPrefix="temp" %>
 <dxwpg:ASPxPivotGrid runat="server">
 	<Styles CssFilePath="{0}/styles.css" CssPostfix="Aqua">
         <MenuStyle GutterWidth="0px" />   

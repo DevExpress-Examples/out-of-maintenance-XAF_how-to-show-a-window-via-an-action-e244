@@ -1,6 +1,6 @@
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v12.1" %>
-<%@ Register TagPrefix="dxwschs" Namespace="DevExpress.Web.ASPxScheduler" Assembly="DevExpress.Web.ASPxScheduler.v12.1" %>
-<%@ Register Assembly="DevExpress.XtraScheduler.v12.1.Core" Namespace="DevExpress.XtraScheduler" TagPrefix="temp" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2" %>
+<%@ Register TagPrefix="dxwschs" Namespace="DevExpress.Web.ASPxScheduler" Assembly="DevExpress.Web.ASPxScheduler.v19.2" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v19.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="temp" %>
 <dxwschs:ASPxScheduler runat="server">
 	<Styles CssFilePath="{0}/styles.css" CssPostfix="Aqua" SelectionColor="#ffd765">
 		<Menu>
