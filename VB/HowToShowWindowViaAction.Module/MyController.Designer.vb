@@ -48,15 +48,15 @@ Namespace HowToShowWindowViaAction.Module
 			Me.popupWindowShowAction1.AcceptButtonCaption = Nothing
 			Me.popupWindowShowAction1.CancelButtonCaption = Nothing
 			Me.popupWindowShowAction1.Caption = "PopupWindowShowAction1"
-			Me.popupWindowShowAction1.Id = "PopupWindowShowAction2"
+			Me.popupWindowShowAction1.Id = "PopupWindowShowAction1"
 '			Me.popupWindowShowAction1.CustomizePopupWindowParams += New DevExpress.ExpressApp.Actions.CustomizePopupWindowParamsEventHandler(Me.popupWindowShowAction1_CustomizePopupWindowParams);
 			' 
 			' popupWindowShowAction2
 			' 
 			Me.popupWindowShowAction2.AcceptButtonCaption = Nothing
 			Me.popupWindowShowAction2.CancelButtonCaption = Nothing
-			Me.popupWindowShowAction2.Caption = "PopupWindowShowAction1"
-			Me.popupWindowShowAction2.Id = "PopupWindowShowAction1"
+			Me.popupWindowShowAction2.Caption = "PopupWindowShowAction2"
+			Me.popupWindowShowAction2.Id = "PopupWindowShowAction2"
 '			Me.popupWindowShowAction2.CustomizePopupWindowParams += New DevExpress.ExpressApp.Actions.CustomizePopupWindowParamsEventHandler(Me.popupWindowShowAction2_CustomizePopupWindowParams);
 			' 
 			' MyController
