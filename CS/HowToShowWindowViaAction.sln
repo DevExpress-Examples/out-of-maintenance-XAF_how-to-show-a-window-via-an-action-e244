@@ -2,6 +2,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Win", "HowToShowWindowViaAction.Win\HowToShowWindowViaAction.Win.csproj", "{645AC9FF-3387-48A6-9BF8-B6BE71D017FF}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Module", "HowToShowWindowViaAction.Module\HowToShowWindowViaAction.Module.csproj", "{93F3B841-0551-4DF5-A43F-CE6D3887D521}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Module.Web", "HowToShowWindowViaAction.Module.Web\HowToShowWindowViaAction.Module.Web.csproj", "{4A54C394-7C40-40B7-B157-D613C63DDC09}"
@@ -9,8 +11,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Web", "HowToShowWindowViaAction.Web\HowToShowWindowViaAction.Web.csproj", "{03D3BA6E-60F1-4A56-90E3-716A290205D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Module.Win", "HowToShowWindowViaAction.Module.Win\HowToShowWindowViaAction.Module.Win.csproj", "{9996369D-73AB-49E9-BDB4-1B3FC09BD618}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToShowWindowViaAction.Win", "HowToShowWindowViaAction.Win\HowToShowWindowViaAction.Win.csproj", "{645AC9FF-3387-48A6-9BF8-B6BE71D017FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
