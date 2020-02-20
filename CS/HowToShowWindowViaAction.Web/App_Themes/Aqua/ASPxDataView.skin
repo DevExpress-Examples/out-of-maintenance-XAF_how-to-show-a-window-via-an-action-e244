@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v12.1" %>
-<%@ Register TagPrefix="dxdv" Namespace="DevExpress.Web.ASPxDataView" Assembly="DevExpress.Web.v12.1" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2" %>
+<%@ Register TagPrefix="dxdv" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2" %>
 
 <dxdv:ASPxDataView runat="server" ItemSpacing="23px" CssFilePath="{0}/styles.css" PagerPanelSpacing="0px" 
     CssPostfix="Aqua" SpriteCssFilePath="{0}/sprite.css" LoadingPanelImagePosition="Top">

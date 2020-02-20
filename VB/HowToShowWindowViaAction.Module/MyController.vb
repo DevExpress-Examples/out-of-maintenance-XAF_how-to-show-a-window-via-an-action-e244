@@ -29,8 +29,6 @@ Namespace HowToShowWindowViaAction.Module
 			Dim objectSpace As IObjectSpace = Application.CreateObjectSpace(GetType(BusinessClass2))
 			Dim listViewId As String = Application.FindListViewId(GetType(BusinessClass2))
 			e.ShowViewParameters.CreatedView = Application.CreateListView(listViewId, Application.CreateCollectionSource(objectSpace, GetType(BusinessClass2), listViewId), True)
-			e.ShowViewParameters.TargetWindow = TargetWindow.NewWindow
-			e.ShowViewParameters.Controllers.Add(Application.CreateController(Of DialogController)())
 		End Sub
 
 		Private Sub simpleAction2_Execute(ByVal sender As Object, ByVal e As SimpleActionExecuteEventArgs) Handles simpleAction2.Execute
@@ -38,14 +36,7 @@ Namespace HowToShowWindowViaAction.Module
 			Dim obj As BusinessClass2 = objectSpace.CreateObject(Of BusinessClass2)()
 			obj.Name = "an existing domain object"
 			objectSpace.CommitChanges()
-
 			e.ShowViewParameters.CreatedView = Application.CreateDetailView(objectSpace, obj)
-			e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow
-			e.ShowViewParameters.Context = TemplateContext.PopupWindow
-			e.ShowViewParameters.CreateAllControllers = True
-			Dim defaultDialogController As New DialogController()
-			e.ShowViewParameters.Controllers.Add(defaultDialogController)
-
 		End Sub
 
 		Private Sub popupWindowShowAction2_CustomizePopupWindowParams(ByVal sender As Object, ByVal e As CustomizePopupWindowParamsEventArgs) Handles popupWindowShowAction2.CustomizePopupWindowParams

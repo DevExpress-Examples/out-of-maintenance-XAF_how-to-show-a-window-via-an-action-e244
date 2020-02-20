@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v12.1" %>
-<%@ Register TagPrefix="dxgv" Namespace="DevExpress.Web.ASPxGridView" Assembly="DevExpress.Web.ASPxGridView.v12.1" %> 
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2" %>
+<%@ Register TagPrefix="dxgv" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2" %> 
 
 <dxgv:ASPxGridView runat="server" CssFilePath="{0}/styles.css" CssPostfix="Aqua">
     <Images SpriteCssFilePath="{0}/sprite.css">

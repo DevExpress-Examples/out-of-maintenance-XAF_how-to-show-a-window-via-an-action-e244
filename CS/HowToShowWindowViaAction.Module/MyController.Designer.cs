@@ -46,15 +46,15 @@ namespace HowToShowWindowViaAction.Module {
 			this.popupWindowShowAction1.AcceptButtonCaption = null;
 			this.popupWindowShowAction1.CancelButtonCaption = null;
 			this.popupWindowShowAction1.Caption = "PopupWindowShowAction1";
-			this.popupWindowShowAction1.Id = "PopupWindowShowAction2";
+			this.popupWindowShowAction1.Id = "PopupWindowShowAction1";
 			this.popupWindowShowAction1.CustomizePopupWindowParams += new DevExpress.ExpressApp.Actions.CustomizePopupWindowParamsEventHandler(this.popupWindowShowAction1_CustomizePopupWindowParams);
 			// 
 			// popupWindowShowAction2
 			// 
 			this.popupWindowShowAction2.AcceptButtonCaption = null;
 			this.popupWindowShowAction2.CancelButtonCaption = null;
-			this.popupWindowShowAction2.Caption = "PopupWindowShowAction1";
-			this.popupWindowShowAction2.Id = "PopupWindowShowAction1";
+			this.popupWindowShowAction2.Caption = "PopupWindowShowAction2";
+			this.popupWindowShowAction2.Id = "PopupWindowShowAction2";
 			this.popupWindowShowAction2.CustomizePopupWindowParams += new DevExpress.ExpressApp.Actions.CustomizePopupWindowParamsEventHandler(this.popupWindowShowAction2_CustomizePopupWindowParams);
 			// 
 			// MyController

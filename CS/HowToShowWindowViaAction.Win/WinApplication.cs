@@ -13,9 +13,15 @@ namespace HowToShowWindowViaAction.Win {
         }
 		public HowToShowWindowViaActionWindowsFormsApplication() {
 			InitializeComponent();
-		}
-
-		private void HowToShowWindowViaActionWindowsFormsApplication_DatabaseVersionMismatch(object sender, DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs e) {
+            InitializeDefaults();
+        }
+        private void InitializeDefaults() {
+            LinkNewObjectToParentImmediately = false;
+            OptimizedControllersCreation = true;
+            UseLightStyle = true;
+            ExecuteStartupLogicBeforeClosingLogonWindow = true;
+        }
+        private void HowToShowWindowViaActionWindowsFormsApplication_DatabaseVersionMismatch(object sender, DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs e) {
 			if(System.Diagnostics.Debugger.IsAttached) {
 				e.Updater.Update();
 				e.Handled = true;
