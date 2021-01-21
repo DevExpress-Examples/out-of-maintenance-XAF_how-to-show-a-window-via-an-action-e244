@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxsm" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2, Version=19.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxsm" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2, Version=19.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
 
 <dxsm:ASPxSiteMapControl runat="server" CssFilePath="{0}/styles.css" CssPostfix="Aqua">
     <DefaultLevelProperties ImageSpacing="10px" NodeSpacing="8px">
