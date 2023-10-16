@@ -1,8 +1,0 @@
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2, Version=19.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxcc" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2, Version=19.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-
-<dxcc:ASPxCloudControl runat="server" CssFilePath="{0}/styles.css" CssPostfix="Aqua" MaxColor="#3F7ABE" MinColor="#BEDAFF" 
-    ValueColor="#BEDAFF" ItemBeginEndTextColor="#3F7ABE">
-    <DisabledStyle ForeColor="#A6A6A6"></DisabledStyle>
-</dxcc:ASPxCloudControl>
-

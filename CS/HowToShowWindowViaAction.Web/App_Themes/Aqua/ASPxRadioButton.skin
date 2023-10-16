@@ -1,5 +1,0 @@
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2" %>
-<%@ Register TagPrefix="dxe" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2" %>
-<dxe:ASPxRadioButton runat="server" SpriteCssFilePath="{0}/sprite.css" CssPostfix="Aqua" CssFilePath="{0}/styles.css" TextSpacing="2px">
-</dxe:ASPxRadioButton>
-
